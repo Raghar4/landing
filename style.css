@@ -1,0 +1,80 @@
+body {
+    /* background-image: url(https://i.gifer.com/4A5.mp4); */
+    background-size: cover;
+    overflow: hidden;
+}
+
+#panda {
+    position: relative;
+    top: 10px;
+    background: url(https://git.io/JUW4L);
+    width: 250px;
+    height: 330px;
+    animation: walking_animation 1s steps(12) infinite, move_forward 8s linear infinite;
+}
+
+@keyframes walking_animation {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 3000px;
+    }
+}
+
+@keyframes move_forward {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(1366px);
+    }
+}
+
+.lead {
+    text-decoration: overline;
+    color: rgb(223, 223, 25);
+}
+
+.px-3 h1 {
+    color: crimson;
+}
+
+.button {
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button-4 {
+    background-color: transparent;
+    color: #ff0251;
+    transition: .3s;
+    animation: pulse 1s infinite;
+    transition: .3s;
+}
+
+.button-4:hover {
+    animation: pulse 1s infinite;
+    transition: .3s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
